@@ -1,0 +1,59 @@
+.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.input-container label {
+	font-size: 1.2em;
+	color: hsl(200, 24%, 40%)
+}
+
+.input-container .input {
+	border: 1px solid hsl(200, 24%, 40%);
+	border-radius: 0.5em;
+	display: flex;
+	align-items: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.input-container .input[aria-selected="true"] {
+	border-color: hsl(61, 70%, 52%);
+}
+
+.input-container .input .icon {
+	font-size: 1.5em;
+	background-color: hsl(202, 86%, 94%);
+	padding-block: 0.4em;
+	padding-inline: 0.8em;
+	color: hsl(200, 24%, 40%)
+}
+
+.input-container .error-msg {
+	color: red;
+	opacity: 0;
+}
+.input-container .error-msg[aria-selected="true"] {
+	opacity: 1;
+}
+
+.input-container .input[aria-selected="true"] .icon{
+	background-color:  hsl(61, 70%, 52%);
+}
+
+.input-container .input input {
+	font-size: 1.5em;
+	border: none;
+	width: 100%;
+	outline: none;
+}
+
+.input-container .input.wrong {
+	border-color: hsl(4, 69%, 50%);
+}
+
+.input-container .input.wrong .icon {
+	background-color: hsl(4, 69%, 50%);
+	color: white;
+}

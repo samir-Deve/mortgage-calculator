@@ -1,0 +1,23 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	background-color: hsl(61, 70%, 52%);
+	border: none;
+	width: 50%;
+	border-radius: 1em;
+	cursor: pointer;
+
+}
+
+.button .text {
+	font-size: 1.2em;
+	font-weight: 550;
+}
+
+@media (max-width: 65em) {
+	.button {
+		width: 100%;
+	}
+}
