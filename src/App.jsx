@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useRef, createContext } from "react";
 import MortgageAmount from "./hooks/MortgageAmount";
 import MortgageTerm from "./hooks/MortgageTerm";
